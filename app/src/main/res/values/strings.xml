@@ -1,0 +1,53 @@
+<resources>
+  <string name="app_name">Mitra Tani Sejahtera</string>
+  <string name="add_user">Tambahkan pengguna</string>
+  <string name="address">Alamat</string>
+  <string name="after_uploading_the_image_wait_for_the_admin_to_confirm_the_data_you_sent">Setelah mengunggah gambar, tunggu admin untuk mengonfirmasi data yang Anda kirim</string>
+  <string name="alert_massage">Data yang diinputkan harus sesuai KTP</string>
+  <string name="balance">Saldo</string>
+  <string name="bank">BANK</string>
+  <string name="code_425">Data Rusak saat kirim / Sesi Anda berakhir</string>
+  <string name="code_500">Respons tidak ditemukan / Sesi Anda berakhir</string>
+  <string name="date_of_retrieval">Tanggal Pengambilan</string>
+  <string name="description_address">RT / RW. Informasi Alamat Rumah</string>
+  <string name="district">Kota kabupaten</string>
+  <string name="edit_profile">Sunting profil</string>
+  <string name="image_ktp">Gambar KTP</string>
+  <string name="name">Nama</string>
+  <string name="number_address">Nomor rumah</string>
+  <string name="number_ktp">Nomor KTP</string>
+  <string name="owner">Pemilik</string>
+  <string name="phone_number">Nomor telepon</string>
+  <string name="photo_holding_ktp_id">foto memegang KTP ID</string>
+  <string name="profile">Profil</string>
+  <string name="province">Propinsi</string>
+  <string name="receipt_date">Tanggal penerimaan</string>
+  <string name="order">Buat Pesanan</string>
+  <string name="sher_on_what_app">Masukkan nama pengguna dan foto bukti transfer Anda di sini</string>
+  <string name="transferred_to">Ditransfer ke</string>
+  <string name="upload_ktp">Unggah KTP</string>
+  <string name="upload_proof_of_transfer">Bagikan Bukti Transfer</string>
+  <string name="validation_password">konfirmasi sandi</string>
+  <string name="password">kata sandi</string>
+  <string name="village">Desa</string>
+  <string name="withdraw">Menarik Tunai</string>
+  <string name="withdraw_limit">Penarikan Anda masih ditangani oleh Admin</string>
+  <string name="default_balance">Rp 0</string>
+  <string name="icon">Icon</string>
+  <string name="home">Home</string>
+  <string name="email">Email</string>
+  <string name="ktp">KTP</string>
+  <string name="login">Login</string>
+  <string name="logo">Logo</string>
+  <string name="pin_bank">PIN Bank</string>
+  <string name="qr">QR</string>
+  <string name="rp">Rp</string>
+  <string name="sub_district">Kelurahan</string>
+  <string name="submit">Submit</string>
+  <string name="total_stup">Total Stup</string>
+  <string name="username">username</string>
+  <string name="binary">Binary</string>
+
+  <!-- TODO: Remove or change this placeholder text -->
+  <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

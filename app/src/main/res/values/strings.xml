@@ -44,10 +44,11 @@
   <string name="rp">Rp</string>
   <string name="sub_district">Kelurahan</string>
   <string name="submit">Submit</string>
-  <string name="total_stup">Total Stup</string>
+  <string name="total_stup">Total Porang</string>
   <string name="username">username</string>
   <string name="binary">Binary</string>
-
-  <!-- TODO: Remove or change this placeholder text -->
-  <string name="hello_blank_fragment">Hello blank fragment</string>
+  <string name="status">status</string>
+  <string name="gallery">Gallery</string>
+  <string name="location">Location</string>
+  <string name="blank_password">Kosongkan jika tidak ingin dirubah</string>
 </resources>

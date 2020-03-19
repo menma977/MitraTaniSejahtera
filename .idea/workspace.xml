@@ -18,7 +18,84 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce9d79cf-d12e-496c-a144-bc4fdd9e8a6d" name="Default Changelist" comment="" />
+    <list default="true" id="ce9d79cf-d12e-496c-a144-bc4fdd9e8a6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_ktp-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/ic_ktp_user-web.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/config/Converter.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/config/FragmentLoading.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/config/Loading.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/AuthController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/ImageGeneratorController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/LoginController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/LogoutController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/TreeController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/UploadImageController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/UserController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/WithdrawController.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/GalleryFragment.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/model/Cache.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/model/Url.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/model/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/EditProfileActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/ImageActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/OrderActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/RegisterActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/ShowGalleryWebViewActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/WithdrawActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/barcode/QRActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/barcode/ResultQrActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account_balance_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_account_circle_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_burst_mode_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/drawable/ic_power_settings_new_black_24dp.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_edit_profile.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_image.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_order.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_qr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_register.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_result_qr.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_show_gallery_web_view.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_withdraw.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_gallery.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/loading_model.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_ktp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-hdpi/ic_ktp_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_ktp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-mdpi/ic_ktp_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_ktp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xhdpi/ic_ktp_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_ktp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxhdpi/ic_ktp_user.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_ktp.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/mipmap-xxxhdpi/ic_ktp_user.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/assetWizardSettings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/codeStyles/Project.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/NavigationActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/NavigationActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/HomeFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/ProfileFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/ProfileFragment.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_navigation.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_navigation.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_home.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/menu/bottom_nav_menu.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,6 +130,9 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_profile.xml" root0="FORCE_HIGHLIGHTING" />
   </component>
@@ -60,18 +140,23 @@
     <option name="version" value="1" />
   </component>
   <component name="ProjectId" id="1ZI9n1LO69NTGAQqcOjA09JLa1R" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="DeviceAndSnapshotComboBoxAction.selectedDevice" value="Pixel_3a_XL_API_28" />
     <property name="DeviceAndSnapshotComboBoxAction.selectionTime" value="2020-03-18T08:16:11.130251300Z" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/drawable-v24" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/res/layout" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,13 +164,17 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="not.eligible.for.single.variant.sync" value="true" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.XML" />
+    <property name="settings.editor.selected.configurable" value="preferences.sourceCode.Kotlin" />
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
+      <recent name="com.mitratanisejahtera.view" />
+      <recent name="com.mitratanisejahtera.view.barcode" />
       <recent name="com.mitratanisejahtera" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Android\Kotlin\MitraTaniSejahtera\app\src\main\res\layout" />
+      <recent name="D:\Android\Kotlin\MitraTaniSejahtera\app\src\main\java\com\mitratanisejahtera" />
       <recent name="D:\Android\Kotlin\MitraTaniSejahtera\app\src\main\res\drawable-v24" />
       <recent name="D:\Android\Kotlin\MitraTaniSejahtera\app\src\main\res\drawable" />
     </key>
@@ -162,17 +251,50 @@
       <workItem from="1584533816384" duration="409000" />
       <workItem from="1584534240260" duration="211000" />
       <workItem from="1584534583102" duration="256000" />
+      <workItem from="1584591093392" duration="142000" />
+      <workItem from="1584591264252" duration="54000" />
+      <workItem from="1584591380325" duration="60000" />
+      <workItem from="1584591454870" duration="42000" />
+      <workItem from="1584591512283" duration="170000" />
+      <workItem from="1584591713591" duration="76000" />
+      <workItem from="1584591803900" duration="59000" />
+      <workItem from="1584591877451" duration="227000" />
+      <workItem from="1584592120548" duration="514000" />
+      <workItem from="1584592654520" duration="856000" />
+      <workItem from="1584593531370" duration="946000" />
+      <workItem from="1584594685899" duration="7598000" />
+      <workItem from="1584602320422" duration="1467000" />
+      <workItem from="1584603806376" duration="4054000" />
+      <workItem from="1584608039454" duration="952000" />
+      <workItem from="1584611441797" duration="13000" />
+      <workItem from="1584611783509" duration="6188000" />
+      <workItem from="1584618061301" duration="194000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
+  </component>
   <component name="WindowStateProjectService">
+    <state x="272" y="22" key="#Inspections" timestamp="1584591676401">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="22" key="#Inspections/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584591676401" />
     <state x="272" y="23" key="#Plugins" timestamp="1584533803429">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="272" y="23" key="#Plugins/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584533803429" />
+    <state x="410" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog" timestamp="1584595343210">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="410" y="119" key="#com.intellij.codeInsight.editorActions.RestoreReferencesDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584595343210" />
+    <state x="471" y="80" key="#com.intellij.ide.util.MemberChooser" timestamp="1584611977168">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="471" y="80" key="#com.intellij.ide.util.MemberChooser/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584611977168" />
     <state x="360" y="100" key="#com.intellij.openapi.updateSettings.impl.PluginUpdateInfoDialog" timestamp="1584534406447">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -189,22 +311,38 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="260" y="119" key="AndroidCreateResourceFileDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584527317065" />
-    <state x="513" y="177" key="AndroidCreateXmlResourceDialog" timestamp="1584523958947">
+    <state x="513" y="177" key="AndroidCreateXmlResourceDialog" timestamp="1584603764115">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="513" y="177" key="AndroidCreateXmlResourceDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584523958947" />
-    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1584533953844">
+    <state x="513" y="177" key="AndroidCreateXmlResourceDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584603764115" />
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1584605701996">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="119" key="FileChooserDialogImpl/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584533953844" />
-    <state x="260" y="107" key="IDE.errors.dialog" timestamp="1584529625881">
+    <state x="460" y="119" key="FileChooserDialogImpl/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584605701996" />
+    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1584617980049">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="260" y="107" key="IDE.errors.dialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584529625881" />
-    <state x="181" y="6" key="SettingsEditor" timestamp="1584528536724">
+    <state width="1317" height="179" key="GridCell.Tab.0.bottom/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584617980049" />
+    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1584617980049">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="181" y="6" key="SettingsEditor/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584528536724" />
+    <state width="1317" height="179" key="GridCell.Tab.0.center/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584617980049" />
+    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1584617980048">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="179" key="GridCell.Tab.0.left/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584617980048" />
+    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1584617980049">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state width="1317" height="179" key="GridCell.Tab.0.right/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584617980049" />
+    <state x="260" y="107" key="IDE.errors.dialog" timestamp="1584606319757">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="260" y="107" key="IDE.errors.dialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584606319757" />
+    <state x="181" y="6" key="SettingsEditor" timestamp="1584614253870">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="181" y="6" key="SettingsEditor/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584614253870" />
     <state x="435" y="208" key="cloudConfig.SelfSettingsDialog" timestamp="1584534659310">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -213,9 +351,13 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1176" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584519261158" />
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584534583210">
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584608038987">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584534583210" />
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584608038987" />
+    <state x="376" y="96" width="607" height="536" key="find.popup" timestamp="1584608437028">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="376" y="96" width="607" height="536" key="find.popup/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584608437028" />
   </component>
 </project>

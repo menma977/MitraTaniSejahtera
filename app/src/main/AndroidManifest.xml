@@ -15,8 +15,64 @@
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
-        android:theme="@style/AppTheme.NoActionBar"
-        android:name=".NavigationActivity"/>
+        android:name=".view.ShowGalleryWebViewActivity"
+        android:label="@string/gallery">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.WithdrawActivity"
+        android:label="@string/withdraw">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.OrderActivity"
+        android:label="@string/order">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.RegisterActivity"
+        android:label="@string/add_user">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.ImageActivity"
+        android:label="@string/image_ktp">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.EditProfileActivity"
+        android:label="@string/edit_profile">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.barcode.ResultQrActivity"
+        android:label="@string/qr">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.barcode.QRActivity"
+        android:label="@string/qr">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".NavigationActivity"
+        android:theme="@style/AppTheme.NoActionBar"/>
     <activity
         android:name=".MainActivity"
         android:theme="@style/AppTheme.NoActionBar">

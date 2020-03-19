@@ -40,7 +40,7 @@
           android:layout_gravity="bottom|center"
           android:layout_marginBottom="20dp"
           android:contentDescription="@string/profile"
-          android:src="@mipmap/ic_launcher_foreground"
+          android:src="@mipmap/ic_launcher"
           app:civ_border_width="2dp"
           app:civ_border_color="@color/colorAccent"
           />
@@ -73,22 +73,29 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/ktp"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
-            android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/ktpTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -106,22 +113,29 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/name"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
-            android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/nameTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -139,22 +153,30 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/email"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/emailTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -172,22 +194,30 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/address"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/addressTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -205,22 +235,30 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/phone_number"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/phoneTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -238,22 +276,30 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/bank"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/bankTextView"/>
 
       </LinearLayout>
 
       <LinearLayout
-          android:background="@drawable/card_primary"
+          android:background="@drawable/card_secondary"
           android:layout_marginTop="10dp"
           android:layout_marginStart="20dp"
           android:layout_marginEnd="20dp"
@@ -271,25 +317,33 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"/>
+            android:textColor="@color/textPrimary"/>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@color/colorAccent"/>
 
         <TextView
+            android:hint="@string/pin_bank"
             android:layout_marginStart="25dp"
             android:layout_marginEnd="25dp"
             android:layout_marginBottom="5dp"
             android:textSize="17sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textColor="@color/colorAccent"
+            android:textColor="@color/textPrimary"
             android:id="@+id/pinBankTextView"/>
 
       </LinearLayout>
 
-    </LinearLayout>
+      <Space
+          android:layout_width="match_parent"
+          android:layout_height="150dp"/>
 
-    <Space
-        android:layout_width="match_parent"
-        android:layout_height="150dp"/>
+    </LinearLayout>
 
   </LinearLayout>
 

@@ -49,7 +49,7 @@
             android:textStyle="bold"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Name"/>
+            android:id="@+id/name"/>
 
         <TextView
             android:hint="@string/username"
@@ -64,7 +64,7 @@
             android:textColor="@color/Dark"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/Phone"/>
+            android:id="@+id/email"/>
 
       </LinearLayout>
 
@@ -101,8 +101,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorAccent"
-            />
+            android:background="@color/colorAccent"/>
 
         <TextView
             android:hint="@string/default_balance"
@@ -110,7 +109,7 @@
             android:textSize="12sp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:id="@+id/textView"/>
+            android:id="@+id/balance"/>
 
       </LinearLayout>
 
@@ -123,7 +122,7 @@
             android:src="@drawable/ic_navigate_next_black_24dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/ledger"
+            android:id="@+id/buttonLedger"
             android:tint="@color/colorAccent"
             android:background="@drawable/button_default_1"
             android:scaleType="fitCenter"
@@ -164,8 +163,7 @@
         <View
             android:layout_width="match_parent"
             android:layout_height="1dp"
-            android:background="@color/colorAccent"
-            />
+            android:background="@color/colorAccent"/>
 
         <TextView
             android:hint="@string/default_balance"
@@ -186,7 +184,7 @@
             android:src="@drawable/ic_navigate_next_black_24dp"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:id="@+id/showDownLine"
+            android:id="@+id/buttonShowDownLine"
             android:tint="@color/colorAccent"
             android:background="@drawable/button_default_1"
             android:scaleType="fitCenter"
@@ -221,6 +219,7 @@
           app:layout_row="0">
 
         <ImageButton
+            android:id="@+id/buttonQR"
             android:padding="8dp"
             android:tint="@color/textPrimary"
             android:src="@drawable/ic_filter_center_focus_black_24dp"
@@ -256,6 +255,7 @@
           app:layout_row="0">
 
         <ImageButton
+            android:id="@+id/buttonOrder"
             android:padding="8dp"
             android:tint="@color/textPrimary"
             android:src="@drawable/ic_local_grocery_store_black_24dp"
@@ -291,6 +291,7 @@
           app:layout_row="0">
 
         <ImageButton
+            android:id="@+id/buttonAddUser"
             android:padding="8dp"
             android:tint="@color/textPrimary"
             android:src="@drawable/ic_person_add_black_24dp"
@@ -322,10 +323,47 @@
           android:layout_height="wrap_content"
           app:layout_columnWeight="1"
           app:layout_rowWeight="1"
+          app:layout_column="0"
+          app:layout_row="1">
+
+        <ImageButton
+            android:id="@+id/buttonWithdraw"
+            android:padding="8dp"
+            android:tint="@color/textPrimary"
+            android:src="@drawable/ic_account_balance_black_24dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/button_default"
+            android:contentDescription="@string/icon"
+            android:scaleType="fitCenter"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:text="@string/withdraw"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:gravity="center|top"
+          android:orientation="vertical"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_columnWeight="1"
+          app:layout_rowWeight="1"
           app:layout_column="1"
           app:layout_row="1">
 
         <ImageButton
+            android:id="@+id/buttonUploadKTP"
             android:padding="8dp"
             android:tint="@color/textPrimary"
             android:src="@drawable/ic_file_upload_black_24dp"
@@ -340,6 +378,42 @@
 
         <TextView
             android:text="@string/upload_ktp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/textPrimary"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:gravity="center"/>
+
+      </LinearLayout>
+
+      <LinearLayout
+          android:gravity="center|top"
+          android:orientation="vertical"
+          android:layout_margin="5dp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          app:layout_columnWeight="1"
+          app:layout_rowWeight="1"
+          app:layout_column="2"
+          app:layout_row="1">
+
+        <ImageButton
+            android:id="@+id/buttonEditProfile"
+            android:padding="8dp"
+            android:tint="@color/textPrimary"
+            android:src="@drawable/ic_account_circle_black_24dp"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_margin="5dp"
+            android:gravity="center"
+            android:background="@drawable/button_default"
+            android:contentDescription="@string/icon"
+            android:scaleType="fitCenter"
+            android:elevation="5dp"/>
+
+        <TextView
+            android:text="@string/edit_profile"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/textPrimary"

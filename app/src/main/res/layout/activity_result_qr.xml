@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.barcode.ResultQrActivity">
+
+  <LinearLayout
+      android:layout_margin="20dp"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/card_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/owner"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:background="@color/colorAccent"/>
+
+      <TextView
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="5dp"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"
+          android:id="@+id/usernameTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/card_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/qr"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:background="@color/colorAccent"/>
+
+      <TextView
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="5dp"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"
+          android:id="@+id/qrCodeTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/card_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/receipt_date"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:background="@color/colorAccent"/>
+
+      <TextView
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="5dp"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"
+          android:id="@+id/getDateTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:background="@drawable/card_secondary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/location"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"/>
+
+      <View
+          android:layout_width="match_parent"
+          android:layout_height="1dp"
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:background="@color/colorAccent"/>
+
+      <TextView
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="5dp"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"
+          android:id="@+id/locationTextView"/>
+
+    </LinearLayout>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="200dp"/>
+
+  </LinearLayout>
+
+</ScrollView>

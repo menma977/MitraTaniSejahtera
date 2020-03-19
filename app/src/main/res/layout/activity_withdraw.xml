@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.WithdrawActivity">
+
+  <LinearLayout
+      android:gravity="center"
+      android:orientation="vertical"
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:background="@drawable/card_primary"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:elevation="50dp"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/balance"
+          android:layout_marginTop="5dp"
+          android:layout_marginStart="20dp"
+          android:layout_marginEnd="20dp"
+          android:textStyle="bold"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"/>
+
+      <TextView
+          android:layout_marginStart="25dp"
+          android:layout_marginEnd="25dp"
+          android:layout_marginBottom="5dp"
+          android:textSize="17sp"
+          android:layout_width="match_parent"
+          android:layout_height="wrap_content"
+          android:textColor="@color/textPrimary"
+          android:id="@+id/balanceTextView"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <TextView
+          android:text="@string/rp"
+          android:textColor="@color/textPrimary"
+          android:layout_weight="0.1"
+          android:textSize="20sp"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"/>
+
+      <EditText
+          android:layout_weight="1"
+          android:hint="@string/default_balance"
+          android:textColor="@color/textPrimary"
+          android:textColorHint="@color/Default"
+          android:backgroundTint="@color/colorAccent"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:inputType="numberDecimal"
+          android:ems="10"
+          android:id="@+id/balanceEditText"/>
+
+    </LinearLayout>
+
+    <Button
+        android:layout_margin="30dp"
+        android:text="@string/submit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/textSecondary"
+        android:background="@drawable/button_success"
+        android:id="@+id/submitButton"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="50dp"/>
+
+  </LinearLayout>
+
+</ScrollView>

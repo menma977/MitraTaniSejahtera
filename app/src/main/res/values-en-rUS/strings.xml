@@ -36,7 +36,7 @@
   <string name="default_balance">Rp 0</string>
   <string name="rp">Rp</string>
   <string name="submit">Submit</string>
-  <string name="total_stup">Total Stup</string>
+  <string name="total_stup">Total Porang</string>
   <string name="transferred_to">Transferred to</string>
   <string name="edit_profile">Edit Profile</string>
   <string name="upload_ktp">Upload KTP</string>
@@ -48,4 +48,8 @@
   <string name="upload_proof_of_transfer">Share Proof of Transfer</string>
   <string name="add_user">Add User</string>
   <string name="binary">Binary</string>
+  <string name="status">status</string>
+  <string name="gallery">Gallery</string>
+  <string name="location">Location</string>
+  <string name="blank_password">Kosongkan jika tidak ingin dirubah</string>
 </resources>

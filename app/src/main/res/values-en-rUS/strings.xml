@@ -52,4 +52,5 @@
   <string name="gallery">Gallery</string>
   <string name="location">Location</string>
   <string name="blank_password">Kosongkan jika tidak ingin dirubah</string>
+  <string name="open_google_map">Bukan Lokasi Di Google map</string>
 </resources>

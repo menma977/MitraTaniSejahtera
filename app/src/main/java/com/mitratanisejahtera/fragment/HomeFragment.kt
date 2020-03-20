@@ -1,6 +1,7 @@
 package com.mitratanisejahtera.fragment
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
@@ -32,12 +33,14 @@ class HomeFragment : Fragment() {
   private lateinit var email: TextView
   private lateinit var balance: TextView
   private lateinit var downLine: TextView
-  private lateinit var qr : ImageButton
-  private lateinit var order : ImageButton
-  private lateinit var addUser : ImageButton
-  private lateinit var withdraw : ImageButton
-  private lateinit var uploadKTP : ImageButton
-  private lateinit var editProfile : ImageButton
+  private lateinit var ledger: ImageButton
+  private lateinit var binary: ImageButton
+  private lateinit var qr: ImageButton
+  private lateinit var order: ImageButton
+  private lateinit var addUser: ImageButton
+  private lateinit var withdraw: ImageButton
+  private lateinit var uploadKTP: ImageButton
+  private lateinit var editProfile: ImageButton
   private lateinit var goTo: Intent
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -54,6 +57,9 @@ class HomeFragment : Fragment() {
     balance = view.findViewById(R.id.balance)
     downLine = view.findViewById(R.id.downLine)
 
+    ledger = view.findViewById(R.id.buttonLedger)
+    binary = view.findViewById(R.id.buttonShowDownLine)
+
     qr = view.findViewById(R.id.buttonQR)
     order = view.findViewById(R.id.buttonOrder)
     addUser = view.findViewById(R.id.buttonAddUser)
@@ -62,6 +68,16 @@ class HomeFragment : Fragment() {
     editProfile = view.findViewById(R.id.buttonEditProfile)
 
     getUser(user.token)
+
+    ledger.setOnClickListener {
+      goTo = Intent(view.context, LedgerWebViewActivity::class.java)
+      startActivity(goTo)
+    }
+
+    binary.setOnClickListener {
+      goTo = Intent(view.context, BinaryWebViewActivity::class.java)
+      startActivity(goTo)
+    }
 
     qr.setOnClickListener {
       goTo = Intent(view.context, QRActivity::class.java)

@@ -31,7 +31,6 @@ class ShowGalleryWebViewActivity : AppCompatActivity() {
     webContent.settings.javaScriptCanOpenWindowsAutomatically = true
 
     webContent.loadUrl(url, mapOf("Authorization" to "Bearer ${user.token}"))
-    println(url)
   }
 }
 

@@ -50,13 +50,12 @@ class ResultQrActivity : AppCompatActivity() {
           getDate.text = response.getJSONObject("response")["start"].toString()
           longitude = response.getJSONObject("response")["x_fild"].toString()
           latitude = response.getJSONObject("response")["y_fild"].toString()
-          if (longitude.isEmpty() && latitude.isEmpty()) {
-            location.isEnabled = false
-          }
+          location.isEnabled = !(longitude.isEmpty() && latitude.isEmpty())
           loading.closeDialog()
         }
       } else {
         runOnUiThread {
+          location.isEnabled = false
           loading.closeDialog()
           Toast.makeText(applicationContext, response["response"].toString(), Toast.LENGTH_SHORT).show()
         }

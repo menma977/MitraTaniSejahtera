@@ -19,31 +19,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="ce9d79cf-d12e-496c-a144-bc4fdd9e8a6d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/BinaryWebViewActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/LedgerWebViewActivity.kt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_binary_web_view.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_ledger_web_view.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/fileHashes/resourceHashesCache.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/classAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/jarAnalysis.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/javaCompile.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.4.1/javaCompile/taskHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/GalleryFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/GalleryFragment.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/HomeFragment.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/fragment/HomeFragment.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/ShowGalleryWebViewActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/ShowGalleryWebViewActivity.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/barcode/ResultQrActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/view/barcode/ResultQrActivity.kt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_result_qr.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_result_qr.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -221,6 +206,9 @@
       <workItem from="1584679396564" duration="76000" />
       <workItem from="1584680276868" duration="2992000" />
       <workItem from="1584695596754" duration="5798000" />
+      <workItem from="1584770381515" duration="1232000" />
+      <workItem from="1584772112927" duration="14000" />
+      <workItem from="1584772709784" duration="1078000" />
     </task>
     <servers />
   </component>
@@ -271,22 +259,22 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="460" y="119" key="FileChooserDialogImpl/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584605701996" />
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1584708880477">
+    <state width="1317" height="179" key="GridCell.Tab.0.bottom" timestamp="1584773700106">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.bottom/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584708880477" />
-    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1584708880477">
+    <state width="1317" height="179" key="GridCell.Tab.0.bottom/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584773700106" />
+    <state width="1317" height="179" key="GridCell.Tab.0.center" timestamp="1584773700105">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.center/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584708880477" />
-    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1584708880477">
+    <state width="1317" height="179" key="GridCell.Tab.0.center/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584773700105" />
+    <state width="1317" height="179" key="GridCell.Tab.0.left" timestamp="1584773700105">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.left/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584708880477" />
-    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1584708880477">
+    <state width="1317" height="179" key="GridCell.Tab.0.left/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584773700105" />
+    <state width="1317" height="179" key="GridCell.Tab.0.right" timestamp="1584773700105">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state width="1317" height="179" key="GridCell.Tab.0.right/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584708880477" />
+    <state width="1317" height="179" key="GridCell.Tab.0.right/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584773700105" />
     <state x="260" y="107" key="IDE.errors.dialog" timestamp="1584606319757">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -303,10 +291,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="92" y="92" width="1176" height="544" key="com.android.tools.idea.avdmanager.AvdListDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584519261158" />
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584679400615">
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog" timestamp="1584772112787">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584679400615" />
+    <state x="376" y="188" key="com.intellij.ide.util.TipDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584772112787" />
     <state x="376" y="96" width="607" height="536" key="find.popup" timestamp="1584608437028">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

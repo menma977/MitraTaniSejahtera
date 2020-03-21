@@ -1,13 +1,13 @@
 package com.mitratanisejahtera.fragment
 
 import android.content.Intent
-import android.net.Uri
 import android.os.Bundle
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
 import android.widget.TextView
+import android.widget.Toast
 import androidx.fragment.app.Fragment
 import com.mitratanisejahtera.MainActivity
 import com.mitratanisejahtera.R
@@ -100,8 +100,12 @@ class HomeFragment : Fragment() {
     }
 
     uploadKTP.setOnClickListener {
-      goTo = Intent(view.context, ImageActivity::class.java)
-      startActivity(goTo)
+      if (user.status != 2) {
+        goTo = Intent(view.context, ImageActivity::class.java)
+        startActivity(goTo)
+      } else {
+        Toast.makeText(view.context, "Anda Sudah di validati oleh Admin", Toast.LENGTH_SHORT).show()
+      }
     }
 
     editProfile.setOnClickListener {
@@ -117,6 +121,7 @@ class HomeFragment : Fragment() {
       val response = UserController.Get(token).execute().get()
       val responseBalance = UserController.Balance(token).execute().get()
       if (response["code"] == 200 && responseBalance["code"] == 200) {
+        println(response)
         if (response.getJSONObject("response")["status"] == 0) {
           LogoutController(token).execute().get()
           activity?.runOnUiThread {

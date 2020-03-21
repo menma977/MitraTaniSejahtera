@@ -60,24 +60,56 @@
         android:layout_width="match_parent"
         android:layout_height="20dp"/>
 
-    <EditText
-        android:id="@+id/passwordEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:backgroundTint="@color/colorAccent"
-        android:ems="10"
-        android:hint="@string/password"
-        android:inputType="textPassword"
-        android:textColor="@color/textPrimary"
-        android:textColorHint="@color/Default"
-        tools:ignore="Autofill"/>
-
     <TextView
         android:text="@string/blank_password"
         android:textSize="12sp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"/>
+
+    <EditText
+        android:id="@+id/passwordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/kata_sandi_lama"
+        android:inputType="textPassword"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/Default"
+        tools:ignore="Autofill"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/newPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/kata_sandi_baru"
+        android:inputType="textPassword"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/Default"
+        tools:ignore="Autofill"/>
+
+    <Space
+        android:layout_width="match_parent"
+        android:layout_height="20dp"/>
+
+    <EditText
+        android:id="@+id/c_NewPasswordEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/colorAccent"
+        android:ems="10"
+        android:hint="@string/konfrimasi_kata_sandi_baru"
+        android:inputType="textPassword"
+        android:textColor="@color/textPrimary"
+        android:textColorHint="@color/Default"
+        tools:ignore="Autofill"/>
 
     <Space
         android:layout_width="match_parent"

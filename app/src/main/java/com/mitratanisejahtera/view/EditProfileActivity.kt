@@ -36,6 +36,8 @@ class EditProfileActivity : AppCompatActivity() {
   private lateinit var name: EditText
   private lateinit var address: EditText
   private lateinit var password: EditText
+  private lateinit var newPassword: EditText
+  private lateinit var cNewPassword: EditText
   private lateinit var profileImage: ImageView
   private lateinit var saveButton: Button
   private lateinit var image: Uri
@@ -54,6 +56,8 @@ class EditProfileActivity : AppCompatActivity() {
     address = findViewById(R.id.addressEditText)
     profileImage = findViewById(R.id.profileImageView)
     password = findViewById(R.id.passwordEditText)
+    newPassword = findViewById(R.id.newPasswordEditText)
+    cNewPassword = findViewById(R.id.c_NewPasswordEditText)
     saveButton = findViewById(R.id.saveButton)
     profile()
 
@@ -84,7 +88,9 @@ class EditProfileActivity : AppCompatActivity() {
             val body = HashMap<String, String>()
             body["name"] = name.text.toString()
             body["address"] = address.text.toString()
-            body["password"] = password.text.toString()
+            body["password_lama"] = password.text.toString()
+            body["password_baru"] = newPassword.text.toString()
+            body["konfirmasi_password_baru"] = cNewPassword.text.toString()
             response = UserController.Post(user.token, body).execute().get()
             if (response["code"] == 200) {
               if (response["password"] == true) {

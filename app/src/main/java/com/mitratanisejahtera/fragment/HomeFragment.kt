@@ -121,7 +121,6 @@ class HomeFragment : Fragment() {
       val response = UserController.Get(token).execute().get()
       val responseBalance = UserController.Balance(token).execute().get()
       if (response["code"] == 200 && responseBalance["code"] == 200) {
-        println(response)
         if (response.getJSONObject("response")["status"] == 0) {
           LogoutController(token).execute().get()
           activity?.runOnUiThread {

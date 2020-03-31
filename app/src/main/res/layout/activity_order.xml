@@ -98,7 +98,10 @@
     </LinearLayout>
 
     <LinearLayout
-        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="5dp"
         android:gravity="center"
         android:orientation="horizontal"
         android:layout_width="match_parent"
@@ -127,6 +130,14 @@
           tools:ignore="Autofill"/>
 
     </LinearLayout>
+
+    <CheckBox
+        android:layout_margin="5dp"
+        android:text="@string/bergabung_menjadi_agent_dengan_biyaya_rp_300_000_akan_di_tambahkan_ke_tagihan_anda"
+        android:textSize="12sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/agentCheckBox"/>
 
     <Button
         android:layout_margin="30dp"

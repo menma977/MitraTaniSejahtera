@@ -9,7 +9,7 @@ class ImageGeneratorController(private val url: String) : AsyncTask<Void, Void, 
   override fun doInBackground(vararg params: Void?): Bitmap {
     return try {
       return if (url.isEmpty() || url == "null") {
-        val urlImage = URL("https://mitratanisejahtera.com/img/mts_top.png")
+        val urlImage = URL("https://mitratanisejahtera.com/img/logo.png")
         BitmapFactory.decodeStream(urlImage.openConnection().getInputStream())
       } else {
         val urlImage = URL(url)
@@ -17,7 +17,7 @@ class ImageGeneratorController(private val url: String) : AsyncTask<Void, Void, 
       }
     } catch (e: Exception) {
       e.printStackTrace()
-      val urlImage = URL("https://mitratanisejahtera.com/img/mts_top.png")
+      val urlImage = URL("https://mitratanisejahtera.com/img/logo.png")
       BitmapFactory.decodeStream(urlImage.openConnection().getInputStream())
     }
   }

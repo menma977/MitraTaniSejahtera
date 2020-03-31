@@ -28,7 +28,7 @@ class LoginController(private var body: HashMap<String, String>) : AsyncTask<Voi
       return if (response.isSuccessful) {
         JSONObject().put("code", response.code).put("response", convertJSON["response"])
           .put("username", convertJSON["username"]).put("status", convertJSON["status"])
-          .put("type", convertJSON["type"]).put("img", convertJSON["img"])
+          .put("role", convertJSON["role"]).put("img", convertJSON["img"])
       } else {
         JSONObject().put("code", response.code).put(
           "response",

@@ -20,8 +20,10 @@ class LedgerWebViewActivity : AppCompatActivity() {
     super.onCreate(savedInstanceState)
     setContentView(R.layout.activity_ledger_web_view)
 
+    val type = intent.getSerializableExtra("type").toString()
+
     user = User(this)
-    url = "${Url.get()}/android/ledger"
+    url = "${Url.get()}/android/ledger/$type"
 
     webContent = findViewById(R.id.webContent)
     webContent.removeAllViews()

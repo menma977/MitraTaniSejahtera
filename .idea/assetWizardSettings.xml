@@ -67,7 +67,7 @@
                                             <option name="values">
                                               <map>
                                                 <entry key="color" value="000000" />
-                                                <entry key="scalingPercent" value="80" />
+                                                <entry key="scalingPercent" value="88" />
                                                 <entry key="trimmed" value="true" />
                                               </map>
                                             </option>
@@ -79,8 +79,8 @@
                                   <option name="values">
                                     <map>
                                       <entry key="backgroundAssetType" value="COLOR" />
-                                      <entry key="foregroundImage" value="D:\GitHub\MTS\public\img\mts_top.png" />
-                                      <entry key="outputName" value="ic_logo_top" />
+                                      <entry key="backgroundColor" value="fff8fe" />
+                                      <entry key="foregroundImage" value="D:\GitHub\MTS\public\img\logo.png" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -148,11 +148,6 @@
                                 </PersistentState>
                               </value>
                             </entry>
-                          </map>
-                        </option>
-                        <option name="values">
-                          <map>
-                            <entry key="outputIconType" value="LAUNCHER_LEGACY" />
                           </map>
                         </option>
                       </PersistentState>

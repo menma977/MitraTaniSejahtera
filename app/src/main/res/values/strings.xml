@@ -44,7 +44,7 @@
   <string name="rp">Rp</string>
   <string name="sub_district">Kelurahan</string>
   <string name="submit">Submit</string>
-  <string name="total_stup">Total Porang</string>
+  <string name="total_stup">Total Pohon</string>
   <string name="username">username</string>
   <string name="binary">Gruop</string>
   <string name="status">status</string>
@@ -55,4 +55,11 @@
   <string name="kata_sandi_baru">Kata Sandi Baru</string>
   <string name="konfrimasi_kata_sandi_baru">Konfrimasi Kata Sandi Baru</string>
   <string name="location">Lokasi</string>
+  <string name="total_kapling">Total Kapling</string>
+  <string name="total_pin">Total Pin</string>
+  <string name="bergabung_menjadi_agent_dengan_biyaya_rp_300_000_akan_di_tambahkan_ke_tagihan_anda">Bergabung Menjadi Agent Dengan biyaya : Rp.300.000. akan di tambahkan ke tagihan anda</string>
+  <string name="bonus_royalty">Bonus Royalty</string>
+  <string name="bonus_sponsor">Bonus Sponsor</string>
+  <string name="bonus_level">Bonus Level</string>
+  <string name="hasil_panen">Hasil Panen</string>
 </resources>

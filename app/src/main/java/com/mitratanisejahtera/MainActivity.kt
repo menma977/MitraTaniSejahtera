@@ -66,7 +66,7 @@ class MainActivity : AppCompatActivity() {
             json.put("username", response["username"].toString())
             json.put("image", response["img"].toString())
             json.put("status", response["status"].toString().toInt())
-            json.put("type", response["type"].toString())
+            json.put("type", response["role"].toString())
             User(applicationContext).set(json.toString())
             goTo = Intent(applicationContext, NavigationActivity::class.java)
             loading.closeDialog()

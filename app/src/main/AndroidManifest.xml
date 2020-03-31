@@ -14,9 +14,33 @@
       android:roundIcon="@mipmap/ic_launcher_round"
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
-    <activity android:name=".view.BinaryWebViewActivity">
+    <activity
+        android:name=".view.PinWebViewActivity"
+        android:label="PIN">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
     </activity>
-    <activity android:name=".view.LedgerWebViewActivity">
+    <activity
+        android:name=".view.GalleryActivity"
+        android:label="@string/gallery">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.BinaryWebViewActivity"
+        android:label="@string/binary">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
+    </activity>
+    <activity
+        android:name=".view.LedgerWebViewActivity"
+        android:label="Ledger">
+      <meta-data
+          android:name="android.support.PARENT_ACTIVITY"
+          android:value=".NavigationActivity"/>
     </activity>
     <activity
         android:name=".view.ShowGalleryWebViewActivity"

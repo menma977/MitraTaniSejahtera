@@ -19,11 +19,9 @@ class UserController {
     override fun doInBackground(vararg params: Void?): JSONObject {
       try {
         val client = OkHttpClient()
-        val request: Request = Request.Builder()
-          .url("${Url.get()}/user/show")
-          .addHeader("X-Requested-With", "XMLHttpRequest")
-          .addHeader("Authorization", "Bearer $token")
-          .build()
+        val request: Request =
+          Request.Builder().url("${Url.get()}/user/show").addHeader("X-Requested-With", "XMLHttpRequest")
+            .addHeader("Authorization", "Bearer $token").build()
         val response: Response = client.newCall(request).execute()
         val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
         val inputData: String = input.readLine()
@@ -42,35 +40,27 @@ class UserController {
   }
 
   class Post(private val token: String, private val body: HashMap<String, String>) :
-    AsyncTask<Void, Void, JSONObject>() {
+      AsyncTask<Void, Void, JSONObject>() {
     override fun doInBackground(vararg params: Void?): JSONObject {
       return try {
         val client = OkHttpClient()
         val mediaType: MediaType = "application/x-www-form-urlencoded".toMediaType()
         val sendBody = Converter().map(body).toRequestBody(mediaType)
-        val request: Request = Request.Builder()
-          .url("${Url.get()}/user/update/profile/data")
-          .post(sendBody)
-          .addHeader("X-Requested-With", "XMLHttpRequest")
-          .addHeader("Authorization", "Bearer $token")
-          .build()
+        val request: Request = Request.Builder().url("${Url.get()}/user/update/profile/data").post(sendBody)
+          .addHeader("X-Requested-With", "XMLHttpRequest").addHeader("Authorization", "Bearer $token").build()
         val response: Response = client.newCall(request).execute()
         val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
         val inputData: String = input.readLine()
         val convertJSON = JSONObject(inputData)
         input.close()
         return if (response.isSuccessful) {
-          JSONObject().put("code", response.code).put("response", convertJSON["response"]).put("password", convertJSON["password"])
+          JSONObject().put("code", response.code).put("response", convertJSON["response"])
+            .put("password", convertJSON["password"])
         } else {
           JSONObject().put("code", response.code).put(
-            "response", convertJSON
-              .getJSONObject("errors")
-              .getJSONArray(
-                convertJSON
-                  .getJSONObject("errors")
-                  .names()[0]
-                  .toString()
-              )[0]
+            "response", convertJSON.getJSONObject("errors").getJSONArray(
+              convertJSON.getJSONObject("errors").names()[0].toString()
+            )[0]
           )
         }
       } catch (e: Exception) {
@@ -84,25 +74,19 @@ class UserController {
     override fun doInBackground(vararg params: Void?): JSONObject {
       try {
         val client = OkHttpClient()
-        val request: Request = Request.Builder()
-          .url("${Url.get()}/user/balance")
-          .addHeader("X-Requested-With", "XMLHttpRequest")
-          .addHeader("Authorization", "Bearer $token")
-          .build()
+        val request: Request =
+          Request.Builder().url("${Url.get()}/user/balance").addHeader("X-Requested-With", "XMLHttpRequest")
+            .addHeader("Authorization", "Bearer $token").build()
         val response: Response = client.newCall(request).execute()
         val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
-
         val inputData: String = input.readLine()
         val convertJSON = JSONObject(inputData)
         input.close()
         return if (response.isSuccessful) {
-          JSONObject()
-            .put("code", response.code)
-            .put("balance", convertJSON["balance"])
-            .put("down_line", convertJSON["down_line"])
-            .put("admin", convertJSON["admin"])
-            .put("data", convertJSON["data"])
-            .put("nominal", convertJSON["nominal"])
+          JSONObject().put("code", response.code).put("balance", convertJSON["balance"])
+            .put("harvest", convertJSON["harvest"]).put("down_line", convertJSON["down_line"])
+            .put("admin", convertJSON["admin"]).put("data", convertJSON["data"]).put("nominal", convertJSON["nominal"])
+            .put("package", convertJSON["package"]).put("codePin", convertJSON["code"])
         } else {
           JSONObject().put("code", response.code).put("response", R.string.code_425)
         }
@@ -114,18 +98,15 @@ class UserController {
   }
 
   class Register(private val token: String, private val body: HashMap<String, String>) :
-    AsyncTask<Void, Void, JSONObject>() {
+      AsyncTask<Void, Void, JSONObject>() {
     override fun doInBackground(vararg params: Void?): JSONObject {
       return try {
         val client = OkHttpClient()
         val mediaType: MediaType = "application/x-www-form-urlencoded".toMediaType()
         val sendBody = Converter().map(body).toRequestBody(mediaType)
-        val request: Request = Request.Builder()
-          .url("${Url.get()}/register")
-          .post(sendBody)
-          .addHeader("X-Requested-With", "XMLHttpRequest")
-          .addHeader("Authorization", "Bearer $token")
-          .build()
+        val request: Request =
+          Request.Builder().url("${Url.get()}/register").post(sendBody).addHeader("X-Requested-With", "XMLHttpRequest")
+            .addHeader("Authorization", "Bearer $token").build()
         val response: Response = client.newCall(request).execute()
         val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
         val inputData: String = input.readLine()
@@ -135,14 +116,9 @@ class UserController {
           JSONObject().put("code", response.code).put("response", convertJSON["response"])
         } else {
           JSONObject().put("code", response.code).put(
-            "response", convertJSON
-              .getJSONObject("errors")
-              .getJSONArray(
-                convertJSON
-                  .getJSONObject("errors")
-                  .names()[0]
-                  .toString()
-              )[0]
+            "response", convertJSON.getJSONObject("errors").getJSONArray(
+              convertJSON.getJSONObject("errors").names()[0].toString()
+            )[0]
           )
         }
       } catch (e: Exception) {

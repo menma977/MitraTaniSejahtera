@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageButton
+import android.widget.LinearLayout
 import android.widget.TextView
 import android.widget.Toast
 import androidx.fragment.app.Fragment
@@ -31,9 +32,13 @@ class HomeFragment : Fragment() {
   private lateinit var name: TextView
   private lateinit var typeUser: TextView
   private lateinit var email: TextView
+  private lateinit var balanceHarvest: TextView
   private lateinit var balance: TextView
   private lateinit var downLine: TextView
+  private lateinit var totalPackage: TextView
+  private lateinit var textPin: TextView
   private lateinit var ledger: ImageButton
+  private lateinit var ledgerHarvest: ImageButton
   private lateinit var binary: ImageButton
   private lateinit var qr: ImageButton
   private lateinit var order: ImageButton
@@ -41,6 +46,12 @@ class HomeFragment : Fragment() {
   private lateinit var withdraw: ImageButton
   private lateinit var uploadKTP: ImageButton
   private lateinit var editProfile: ImageButton
+  private lateinit var detailGallery: ImageButton
+  private lateinit var addUserLinear: LinearLayout
+  private lateinit var pinLinear: LinearLayout
+  private lateinit var balanceLinear: LinearLayout
+  private lateinit var groupLinear: LinearLayout
+  private lateinit var pin: ImageButton
   private lateinit var goTo: Intent
 
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
@@ -54,10 +65,14 @@ class HomeFragment : Fragment() {
     name = view.findViewById(R.id.name)
     typeUser = view.findViewById(R.id.typeUser)
     email = view.findViewById(R.id.email)
-    balance = view.findViewById(R.id.balance)
+    balance = view.findViewById(R.id.balanceTextView)
+    balanceHarvest = view.findViewById(R.id.balanceHarvestTextView)
     downLine = view.findViewById(R.id.downLine)
+    totalPackage = view.findViewById(R.id.totalPackageTextView)
+    textPin = view.findViewById(R.id.pinTextView)
 
     ledger = view.findViewById(R.id.buttonLedger)
+    ledgerHarvest = view.findViewById(R.id.buttonLedgerHarvest)
     binary = view.findViewById(R.id.buttonShowDownLine)
 
     qr = view.findViewById(R.id.buttonQR)
@@ -66,11 +81,23 @@ class HomeFragment : Fragment() {
     withdraw = view.findViewById(R.id.buttonWithdraw)
     uploadKTP = view.findViewById(R.id.buttonUploadKTP)
     editProfile = view.findViewById(R.id.buttonEditProfile)
+    detailGallery = view.findViewById(R.id.buttonTotalPackage)
+    pin = view.findViewById(R.id.buttonPin)
+
+    pinLinear = view.findViewById(R.id.pinLinearLayout)
+    balanceLinear = view.findViewById(R.id.balanceLinearLayout)
+    groupLinear = view.findViewById(R.id.groupLinearLayout)
+    addUserLinear = view.findViewById(R.id.addUserLinearLayout)
 
     getUser(user.token)
 
     ledger.setOnClickListener {
-      goTo = Intent(view.context, LedgerWebViewActivity::class.java)
+      goTo = Intent(view.context, LedgerWebViewActivity::class.java).putExtra("type", 1)
+      startActivity(goTo)
+    }
+
+    ledgerHarvest.setOnClickListener {
+      goTo = Intent(view.context, LedgerWebViewActivity::class.java).putExtra("type", 2)
       startActivity(goTo)
     }
 
@@ -113,6 +140,16 @@ class HomeFragment : Fragment() {
       startActivity(goTo)
     }
 
+    detailGallery.setOnClickListener {
+      goTo = Intent(view.context, GalleryActivity::class.java)
+      startActivity(goTo)
+    }
+
+    pin.setOnClickListener {
+      goTo = Intent(view.context, PinWebViewActivity::class.java)
+      startActivity(goTo)
+    }
+
     return view
   }
 
@@ -135,15 +172,24 @@ class HomeFragment : Fragment() {
           json.put("username", response.getJSONObject("response")["username"].toString())
           json.put("image", response.getJSONObject("response")["image"].toString())
           json.put("status", response.getJSONObject("response")["status"].toString().toInt())
-          json.put("type", response.getJSONObject("response")["type"].toString())
+          json.put("type", response.getJSONObject("response")["role"].toString())
           user.set(json.toString())
           activity?.runOnUiThread {
+            pinLinear.visibility = LinearLayout.GONE
+            if (response.getJSONObject("response")["role"] == 2 || response.getJSONObject("response")["role"] == 3) {
+              balanceLinear.visibility = LinearLayout.GONE
+              groupLinear.visibility = LinearLayout.GONE
+              addUserLinear.visibility = LinearLayout.GONE
+            }
             changeProfileImage(response.getJSONObject("response")["image"].toString())
             name.text = response.getJSONObject("response")["name"].toString()
             typeUser.text = response.getJSONObject("response")["type"].toString()
             email.text = response.getJSONObject("response")["email"].toString()
             balance.text = responseBalance["balance"].toString()
+            balanceHarvest.text = responseBalance["harvest"].toString()
             downLine.text = responseBalance["down_line"].toString()
+            totalPackage.text = responseBalance["package"].toString()
+            textPin.text = responseBalance["codePin"].toString()
             loadingFragment.closeDialog()
           }
         }

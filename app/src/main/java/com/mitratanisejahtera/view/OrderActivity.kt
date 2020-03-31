@@ -1,9 +1,11 @@
 package com.mitratanisejahtera.view
 
 import android.os.Build
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.text.Editable
+import android.text.TextWatcher
 import android.widget.*
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.content.ContextCompat
 import com.mitratanisejahtera.R
 import com.mitratanisejahtera.config.Loading
@@ -22,9 +24,10 @@ class OrderActivity : AppCompatActivity() {
   private lateinit var name: TextView
   private lateinit var bank: TextView
   private lateinit var pinBank: TextView
-  private lateinit var inputStup: EditText
+  private lateinit var inputTree: EditText
   private lateinit var submit: Button
   private lateinit var contentData: LinearLayout
+  private lateinit var agentValidation: CheckBox
   private val localeID = Locale("in", "ID")
   private val numberFormatToIDR = NumberFormat.getCurrencyInstance(localeID)
 
@@ -39,10 +42,32 @@ class OrderActivity : AppCompatActivity() {
     name = findViewById(R.id.nameTextView)
     bank = findViewById(R.id.bankTextView)
     pinBank = findViewById(R.id.pinBankTextView)
-    inputStup = findViewById(R.id.totalEditText)
+    inputTree = findViewById(R.id.totalEditText)
     submit = findViewById(R.id.submitButton)
     contentData = findViewById(R.id.contentDataLinearLayout)
+    agentValidation = findViewById(R.id.agentCheckBox)
+    agentValidation.visibility = CheckBox.INVISIBLE
     getDataUser()
+
+    inputTree.addTextChangedListener(object : TextWatcher {
+      override fun afterTextChanged(text: Editable?) {
+        if (text.toString().isNotEmpty()) {
+          if (User(applicationContext).type.toInt() != 1 && User(applicationContext).type.toInt() != 4) {
+            if (text.toString().toInt() >= 2) {
+              agentValidation.visibility = CheckBox.VISIBLE
+            } else {
+              agentValidation.visibility = CheckBox.INVISIBLE
+            }
+          }
+        }
+      }
+
+      override fun beforeTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+      }
+
+      override fun onTextChanged(p0: CharSequence?, p1: Int, p2: Int, p3: Int) {
+      }
+    })
 
     submit.setOnClickListener {
       loading.openDialog()
@@ -53,6 +78,7 @@ class OrderActivity : AppCompatActivity() {
   private fun getDataUser() {
     Timer().schedule(100) {
       val response = UserController.Balance(user.token).execute().get()
+      println(response)
       if (response["code"] == 200) {
         runOnUiThread {
           val nominal = response["nominal"].toString().toInt()
@@ -81,7 +107,12 @@ class OrderActivity : AppCompatActivity() {
   private fun order() {
     Timer().schedule(100) {
       val body = HashMap<String, String>()
-      body["total"] = inputStup.text.toString()
+      body["total"] = inputTree.text.toString()
+      if (agentValidation.isChecked) {
+        body["agentMode"] = "1"
+      } else {
+        body["agentMode"] = "0"
+      }
       val response = TreeController.Post(user.token, body).execute().get()
       if (response["code"] == 200) {
         runOnUiThread {
@@ -117,7 +148,7 @@ class OrderActivity : AppCompatActivity() {
       linearLayout.orientation = LinearLayout.VERTICAL
       linearLayout.elevation = 50F
       linearLayout.layoutParams = mainLinear
-      val titleValue = "Total Request Stup : " + dataJsonArray.getJSONObject(i)["total"]
+      val titleValue = "Total Request Pohon : " + dataJsonArray.getJSONObject(i)["total"]
       val title = TextView(this)
       title.text = titleValue
       if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M) {
@@ -128,6 +159,9 @@ class OrderActivity : AppCompatActivity() {
       title.layoutParams = titleLinear
       linearLayout.addView(title)
       var count = nominal * dataJsonArray.getJSONObject(i)["total"].toString().toInt()
+      if (dataJsonArray.getJSONObject(i)["status"].toString().toInt() == 99) {
+        count += 300000
+      }
       count += dataJsonArray.getJSONObject(i)["code"].toString().toInt()
       val nominalDecimalFormat = numberFormatToIDR.format(count).toString()
       val value = TextView(this)

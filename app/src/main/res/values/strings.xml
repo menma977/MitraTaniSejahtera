@@ -58,8 +58,8 @@
   <string name="total_kapling">Total Kapling</string>
   <string name="total_pin">Total Pin</string>
   <string name="bergabung_menjadi_agent_dengan_biyaya_rp_300_000_akan_di_tambahkan_ke_tagihan_anda">Bergabung Menjadi Agent Dengan biyaya : Rp.300.000. akan di tambahkan ke tagihan anda</string>
-  <string name="bonus_royalty">Bonus Royalty</string>
-  <string name="bonus_sponsor">Bonus Sponsor</string>
-  <string name="bonus_level">Bonus Level</string>
   <string name="hasil_panen">Hasil Panen</string>
+  <string name="kirim_bukti_transfer">Kirim Bukti Transfer</string>
+  <string name="ambil_gambar_dengan_menekan_logo">Ambil Gambar dengan menekan logo</string>
+  <string name="share">Share</string>
 </resources>

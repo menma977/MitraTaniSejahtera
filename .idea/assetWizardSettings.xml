@@ -173,7 +173,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/D:/sowftwhere/IntelliJ%20IDEA%202019.3.1/plugins/android/lib/android.jar!/images/material_design_icons/action/ic_account_circle_black_24dp.xml" />
+                                      <entry key="url" value="jar:file:/D:/sowftwhere/IntelliJ%20IDEA%202019.3.1/plugins/android/lib/android.jar!/images/material_design_icons/content/ic_send_black_24dp.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -183,7 +183,7 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="outputName" value="ic_account_circle_black_24dp" />
+                            <entry key="outputName" value="ic_send_black_24dp" />
                             <entry key="sourceFile" value="C:\Users\ecs" />
                           </map>
                         </option>

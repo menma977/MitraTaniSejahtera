@@ -1,7 +1,13 @@
 package com.mitratanisejahtera.view
 
+import android.annotation.SuppressLint
+import android.app.Activity
+import android.content.Intent
+import android.content.pm.PackageManager
+import android.net.Uri
 import android.os.Build
 import android.os.Bundle
+import android.provider.MediaStore
 import android.text.Editable
 import android.text.TextWatcher
 import android.widget.*
@@ -10,6 +16,7 @@ import androidx.core.content.ContextCompat
 import com.mitratanisejahtera.R
 import com.mitratanisejahtera.config.Loading
 import com.mitratanisejahtera.controller.TreeController
+import com.mitratanisejahtera.controller.UploadTransferController
 import com.mitratanisejahtera.controller.UserController
 import com.mitratanisejahtera.model.User
 import org.json.JSONArray
@@ -30,6 +37,7 @@ class OrderActivity : AppCompatActivity() {
   private lateinit var agentValidation: CheckBox
   private val localeID = Locale("in", "ID")
   private val numberFormatToIDR = NumberFormat.getCurrencyInstance(localeID)
+  private lateinit var indexCode: String
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -78,7 +86,6 @@ class OrderActivity : AppCompatActivity() {
   private fun getDataUser() {
     Timer().schedule(100) {
       val response = UserController.Balance(user.token).execute().get()
-      println(response)
       if (response["code"] == 200) {
         runOnUiThread {
           val nominal = response["nominal"].toString().toInt()
@@ -145,6 +152,10 @@ class OrderActivity : AppCompatActivity() {
     for (i in 0 until dataJsonArray.length()) {
       val linearLayout = LinearLayout(this)
       linearLayout.setBackgroundResource(R.drawable.card_secondary)
+      linearLayout.setOnClickListener {
+        pickImageFromGallery()
+        indexCode = dataJsonArray.getJSONObject(i)["id"].toString()
+      }
       linearLayout.orientation = LinearLayout.VERTICAL
       linearLayout.elevation = 50F
       linearLayout.layoutParams = mainLinear
@@ -175,6 +186,52 @@ class OrderActivity : AppCompatActivity() {
       linearLayout.addView(value)
 
       contentData.addView(linearLayout)
+    }
+  }
+
+  private fun pickImageFromGallery() {
+    val intent = Intent(Intent.ACTION_PICK)
+    intent.type = "image/*"
+    startActivityForResult(intent, 1000)
+  }
+
+  @SuppressLint("Recycle")
+  private fun getRealPathFromImageURI(contentUri: Uri?): String {
+    val data: Array<String> = Array(100) { MediaStore.Images.Media.DATA }
+    val cursor = this.contentResolver.query(contentUri, data, null, null, null)!!
+    val columnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA)
+    cursor.moveToFirst()
+    return cursor.getString(columnIndex)
+  }
+
+  override fun onRequestPermissionsResult(requestCode: Int, permissions: Array<out String>, grantResults: IntArray) {
+    when (requestCode) {
+      1001 -> {
+        if (grantResults.isNotEmpty() && grantResults[0] == PackageManager.PERMISSION_GRANTED) {
+          pickImageFromGallery()
+        } else {
+          Toast.makeText(this, "Permission denied", Toast.LENGTH_SHORT).show()
+        }
+      }
+    }
+  }
+
+  @SuppressLint("MissingSuperCall")
+  override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
+    if (resultCode == Activity.RESULT_OK && requestCode == 1000) {
+      loading.openDialog()
+      Timer().schedule(100) {
+        val response =
+          UploadTransferController(user.token, indexCode, getRealPathFromImageURI(data?.data)).execute().get()
+        runOnUiThread {
+          if (response["code"] == 200) {
+            Toast.makeText(applicationContext, response["data"].toString(), Toast.LENGTH_LONG).show()
+          } else {
+            Toast.makeText(applicationContext, "Ada maslah saat mengirim gambar/coba login kembali untuk mengupload ulang", Toast.LENGTH_LONG).show()
+          }
+          loading.closeDialog()
+        }
+      }
     }
   }
 }

@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="Gradle: net.gotev:uploadservice:3.3@aar">
     <CLASSES>
-      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a96eb1503b60702dc026aec229098d08/jetified-uploadservice-3.3/jars/classes.jar!/" />
-      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a96eb1503b60702dc026aec229098d08/jetified-uploadservice-3.3/res" />
+      <root url="jar://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2ec6c3a483a84e4a230ea6aa482d33b/jetified-uploadservice-3.3/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.gradle/caches/transforms-2/files-2.1/a2ec6c3a483a84e4a230ea6aa482d33b/jetified-uploadservice-3.3/res" />
     </CLASSES>
     <JAVADOC>
       <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/net.gotev/uploadservice/3.3/c56a1c08d53d795a609dd5fe21afd522b95a0196/uploadservice-3.3-javadoc.jar!/" />

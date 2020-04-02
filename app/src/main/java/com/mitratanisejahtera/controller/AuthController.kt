@@ -16,7 +16,7 @@ class AuthController(private var token: String) : AsyncTask<Void, Void, JSONObje
         Request.Builder().url("${Url.get()}/verification").addHeader("X-Requested-With", "XMLHttpRequest")
           .addHeader("Authorization", "Bearer $token").build()
       val response: Response = client.newCall(request).execute()
-      val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
+      val input = BufferedReader(InputStreamReader(response.body!!.byteStream()))
       val inputData: String = input.readLine()
       val convertJSON = JSONObject(inputData)
       input.close()

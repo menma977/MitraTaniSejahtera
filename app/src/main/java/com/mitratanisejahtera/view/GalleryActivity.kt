@@ -93,7 +93,7 @@ class GalleryActivity : AppCompatActivity() {
             status.textSize = 12F
             status.layoutParams = text
             val parameterStatus: String =
-              if (response.getJSONArray("response").getJSONObject(i)["yield"].toString().isEmpty()) {
+              if (response.getJSONArray("response").getJSONObject(i)["yield"].toString() == "null") {
                 "Belum Panen"
               } else {
                 "Sudah Panen - Hasil Panen:" + response.getJSONArray("response").getJSONObject(i)["yield"].toString()

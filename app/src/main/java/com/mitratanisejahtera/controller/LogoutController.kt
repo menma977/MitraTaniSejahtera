@@ -19,7 +19,7 @@ class LogoutController(private var token: String) : AsyncTask<Void, Void, JSONOb
           "Authorization", "Bearer $token"
         ).build()
       val response: Response = client.newCall(request).execute()
-      val input = BufferedReader(InputStreamReader(response.body?.byteStream()))
+      val input = BufferedReader(InputStreamReader(response.body!!.byteStream()))
       val inputData: String = input.readLine()
       val convertJSON = JSONObject(inputData)
       input.close()

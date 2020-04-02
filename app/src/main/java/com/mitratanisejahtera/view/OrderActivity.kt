@@ -198,7 +198,7 @@ class OrderActivity : AppCompatActivity() {
   @SuppressLint("Recycle")
   private fun getRealPathFromImageURI(contentUri: Uri?): String {
     val data: Array<String> = Array(100) { MediaStore.Images.Media.DATA }
-    val cursor = this.contentResolver.query(contentUri, data, null, null, null)!!
+    val cursor = this.contentResolver.query(contentUri!!, data, null, null, null)!!
     val columnIndex = cursor.getColumnIndex(MediaStore.Images.Media.DATA)
     cursor.moveToFirst()
     return cursor.getString(columnIndex)

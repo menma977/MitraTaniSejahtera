@@ -97,11 +97,12 @@ class GalleryFragment : Fragment() {
             status.setTextColor(ContextCompat.getColor(view.context, R.color.textPrimary))
             status.textSize = 12F
             status.layoutParams = text
-            val parameterStatus: String = if (response.getJSONArray("response").getJSONObject(i)["yield"].toString().isEmpty()) {
-              "Belum Panen"
-            } else {
-              "Sudah Panen - Hasil Panen:" + response.getJSONArray("response").getJSONObject(i)["yield"].toString()
-            }
+            val parameterStatus: String =
+              if (response.getJSONArray("response").getJSONObject(i)["yield"].toString() == "null") {
+                "Belum Panen"
+              } else {
+                "Sudah Panen - Hasil Panen:" + response.getJSONArray("response").getJSONObject(i)["yield"].toString()
+              }
             status.text = parameterStatus
             linearLayoutHeader.addView(status)
             linearLayout.addView(linearLayoutHeader)

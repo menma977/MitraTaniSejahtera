@@ -31,13 +31,17 @@ class OrderActivity : AppCompatActivity() {
   private lateinit var name: TextView
   private lateinit var bank: TextView
   private lateinit var pinBank: TextView
+  private lateinit var idType: TextView
   private lateinit var inputTree: EditText
+  private lateinit var porang: Button
+  private lateinit var tales: Button
   private lateinit var submit: Button
   private lateinit var contentData: LinearLayout
   private lateinit var agentValidation: CheckBox
   private val localeID = Locale("in", "ID")
   private val numberFormatToIDR = NumberFormat.getCurrencyInstance(localeID)
   private lateinit var indexCode: String
+  private var type: String = "0"
 
   override fun onCreate(savedInstanceState: Bundle?) {
     super.onCreate(savedInstanceState)
@@ -50,12 +54,27 @@ class OrderActivity : AppCompatActivity() {
     name = findViewById(R.id.nameTextView)
     bank = findViewById(R.id.bankTextView)
     pinBank = findViewById(R.id.pinBankTextView)
+    idType = findViewById(R.id.idTypeTextView)
     inputTree = findViewById(R.id.totalEditText)
+    porang = findViewById(R.id.buttonPorang)
+    tales = findViewById(R.id.buttonTales)
     submit = findViewById(R.id.submitButton)
     contentData = findViewById(R.id.contentDataLinearLayout)
     agentValidation = findViewById(R.id.agentCheckBox)
     agentValidation.visibility = CheckBox.INVISIBLE
     getDataUser()
+
+    porang.setOnClickListener {
+      type = "0"
+      val text = "Total Porang"
+      idType.text = text
+    }
+
+    tales.setOnClickListener {
+      type = "1"
+      val text = "Total Talas"
+      idType.text = text
+    }
 
     inputTree.addTextChangedListener(object : TextWatcher {
       override fun afterTextChanged(text: Editable?) {
@@ -115,6 +134,7 @@ class OrderActivity : AppCompatActivity() {
     Timer().schedule(100) {
       val body = HashMap<String, String>()
       body["total"] = inputTree.text.toString()
+      body["type"] = type
       if (agentValidation.isChecked) {
         body["agentMode"] = "1"
       } else {
@@ -227,7 +247,11 @@ class OrderActivity : AppCompatActivity() {
           if (response["code"] == 200) {
             Toast.makeText(applicationContext, response["data"].toString(), Toast.LENGTH_LONG).show()
           } else {
-            Toast.makeText(applicationContext, "Ada maslah saat mengirim gambar/coba login kembali untuk mengupload ulang", Toast.LENGTH_LONG).show()
+            Toast.makeText(
+              applicationContext,
+              "Ada maslah saat mengirim gambar/coba login kembali untuk mengupload ulang",
+              Toast.LENGTH_LONG
+            ).show()
           }
           loading.closeDialog()
         }

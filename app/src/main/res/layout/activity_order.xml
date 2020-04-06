@@ -98,6 +98,34 @@
     </LinearLayout>
 
     <LinearLayout
+        android:layout_margin="10dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+      <Button
+          android:id="@+id/buttonPorang"
+          android:layout_margin="5dp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/button_info"
+          android:textColor="@color/textSecondary"
+          android:text="@string/porang"/>
+
+      <Button
+          android:id="@+id/buttonTales"
+          android:layout_margin="5dp"
+          android:layout_width="0dp"
+          android:layout_height="wrap_content"
+          android:layout_weight="1"
+          android:background="@drawable/button_primary"
+          android:textColor="@color/textSecondary"
+          android:text="@string/talas"/>
+
+    </LinearLayout>
+
+    <LinearLayout
         android:layout_marginTop="10dp"
         android:layout_marginStart="10dp"
         android:layout_marginEnd="10dp"
@@ -108,13 +136,14 @@
         android:layout_height="wrap_content">
 
       <TextView
-          android:text="@string/total_stup"
-          android:textColor="@color/textPrimary"
+          android:id="@+id/idTypeTextView"
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
           android:layout_weight="0.5"
           android:gravity="center"
-          android:textSize="20sp"
-          android:layout_width="wrap_content"
-          android:layout_height="wrap_content"/>
+          android:text="@string/total_stup"
+          android:textColor="@color/textPrimary"
+          android:textSize="20sp"/>
 
       <EditText
           android:layout_weight="1"

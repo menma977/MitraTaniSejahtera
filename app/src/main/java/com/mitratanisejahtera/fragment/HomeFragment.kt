@@ -54,6 +54,10 @@ class HomeFragment : Fragment() {
   private lateinit var pin: ImageButton
   private lateinit var goTo: Intent
 
+  private lateinit var banner: LinearLayout
+  private lateinit var title: TextView
+  private lateinit var description: TextView
+
   override fun onCreateView(inflater: LayoutInflater, container: ViewGroup?, savedInstanceState: Bundle?): View? {
     val view = inflater.inflate(R.layout.fragment_home, container, false)
 
@@ -88,6 +92,10 @@ class HomeFragment : Fragment() {
     balanceLinear = view.findViewById(R.id.balanceLinearLayout)
     groupLinear = view.findViewById(R.id.groupLinearLayout)
     addUserLinear = view.findViewById(R.id.addUserLinearLayout)
+
+    banner = view.findViewById(R.id.banner)
+    title = view.findViewById(R.id.titleBanner)
+    description = view.findViewById(R.id.descriptionBanner)
 
     getUser(user.token)
 
@@ -190,6 +198,15 @@ class HomeFragment : Fragment() {
             downLine.text = responseBalance["down_line"].toString()
             totalPackage.text = responseBalance["package"].toString()
             textPin.text = responseBalance["codePin"].toString()
+            if ((responseBalance["bannerTitle"].toString()
+                .isEmpty() || responseBalance["bannerTitle"] == "null") && (responseBalance["bannerDescription"].toString()
+                .isEmpty() || responseBalance["bannerDescription"] == "null")
+            ) {
+              banner.visibility = LinearLayout.GONE
+            } else {
+              title.text = responseBalance["bannerTitle"].toString()
+              description.text = responseBalance["bannerDescription"].toString()
+            }
             loadingFragment.closeDialog()
           }
         }

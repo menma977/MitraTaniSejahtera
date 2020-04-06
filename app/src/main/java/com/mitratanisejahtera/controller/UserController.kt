@@ -87,6 +87,7 @@ class UserController {
             .put("harvest", convertJSON["harvest"]).put("down_line", convertJSON["down_line"])
             .put("admin", convertJSON["admin"]).put("data", convertJSON["data"]).put("nominal", convertJSON["nominal"])
             .put("package", convertJSON["package"]).put("codePin", convertJSON["code"])
+            .put("bannerTitle", convertJSON["bannerTitle"]).put("bannerDescription", convertJSON["bannerDescription"])
         } else {
           JSONObject().put("code", response.code).put("response", R.string.code_425)
         }

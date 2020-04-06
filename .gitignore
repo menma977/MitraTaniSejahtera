@@ -1,4 +1,4 @@
 Java.gitignore
 .idea
 local.properties
-.idea/workspace.xml
+.idea/*

@@ -1,4 +1,4 @@
 Java.gitignore
+.gradle
 .idea
 local.properties
-.idea/*

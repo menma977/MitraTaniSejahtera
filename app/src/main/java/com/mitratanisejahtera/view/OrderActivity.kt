@@ -66,14 +66,14 @@ class OrderActivity : AppCompatActivity() {
 
     porang.setOnClickListener {
       type = "0"
-      //val text = "Total Porang"
-      //idType.text = text
+      val text = "Total Porang"
+      idType.text = text
     }
 
     tales.setOnClickListener {
       type = "1"
-      //val text = "Total Talas"
-      //idType.text = text
+      val text = "Total Talas"
+      idType.text = text
     }
 
     inputTree.addTextChangedListener(object : TextWatcher {

@@ -15,6 +15,7 @@
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
+        android:screenOrientation="locked"
         android:name=".view.PinWebViewActivity"
         android:label="PIN">
       <meta-data
@@ -22,6 +23,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.GalleryActivity"
         android:label="@string/gallery">
       <meta-data
@@ -29,6 +31,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.BinaryWebViewActivity"
         android:label="@string/binary">
       <meta-data
@@ -36,6 +39,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.LedgerWebViewActivity"
         android:label="Ledger">
       <meta-data
@@ -43,6 +47,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.ShowGalleryWebViewActivity"
         android:label="@string/gallery">
       <meta-data
@@ -50,6 +55,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.WithdrawActivity"
         android:label="@string/withdraw">
       <meta-data
@@ -57,6 +63,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.OrderActivity"
         android:label="@string/order">
       <meta-data
@@ -64,6 +71,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.RegisterActivity"
         android:label="@string/add_user">
       <meta-data
@@ -71,6 +79,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.ImageActivity"
         android:label="@string/image_ktp">
       <meta-data
@@ -78,6 +87,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.EditProfileActivity"
         android:label="@string/edit_profile">
       <meta-data
@@ -85,6 +95,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.barcode.ResultQrActivity"
         android:label="@string/qr">
       <meta-data
@@ -92,6 +103,7 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".view.barcode.QRActivity"
         android:label="@string/qr">
       <meta-data
@@ -99,9 +111,11 @@
           android:value=".NavigationActivity"/>
     </activity>
     <activity
+        android:screenOrientation="locked"
         android:name=".NavigationActivity"
         android:theme="@style/AppTheme.NoActionBar"/>
     <activity
+        android:screenOrientation="locked"
         android:name=".MainActivity"
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>

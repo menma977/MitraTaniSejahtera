@@ -35,7 +35,7 @@ class WithdrawController {
         }
       } catch (e: Exception) {
         e.printStackTrace()
-        return JSONObject().put("code", 500).put("response", R.string.code_500)
+        return JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
       }
     }
   }
@@ -64,7 +64,7 @@ class WithdrawController {
           )
         }
       } catch (e: Exception) {
-        JSONObject().put("code", 500).put("response", R.string.code_500)
+        JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
       }
     }
   }

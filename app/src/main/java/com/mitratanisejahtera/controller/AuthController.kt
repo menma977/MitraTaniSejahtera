@@ -26,7 +26,7 @@ class AuthController(private var token: String) : AsyncTask<Void, Void, JSONObje
         JSONObject().put("code", response.code).put("response", convertJSON["message"])
       }
     } catch (e: Exception) {
-      return JSONObject().put("code", 500).put("response", R.string.code_500)
+      return JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
     }
   }
 }

@@ -29,7 +29,7 @@ class LogoutController(private var token: String) : AsyncTask<Void, Void, JSONOb
         JSONObject().put("code", response.code).put("response", R.string.code_425)
       }
     } catch (e: Exception) {
-      return JSONObject().put("code", 500).put("response", R.string.code_500)
+      return JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
     }
   }
 }

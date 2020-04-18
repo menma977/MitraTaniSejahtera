@@ -40,7 +40,7 @@ class TreeController {
           )
         }
       } catch (e: Exception) {
-        JSONObject().put("code", 500).put("response", R.string.code_500)
+        JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
       }
     }
   }
@@ -69,7 +69,7 @@ class TreeController {
           )
         }
       } catch (e: Exception) {
-        JSONObject().put("code", 500).put("response", R.string.code_500)
+        JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
       }
     }
   }
@@ -92,7 +92,7 @@ class TreeController {
           JSONObject().put("code", response.code).put("response", convertJSON["message"])
         }
       } catch (e: Exception) {
-        return JSONObject().put("code", 500).put("response", R.string.code_500)
+        return JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
       }
     }
   }

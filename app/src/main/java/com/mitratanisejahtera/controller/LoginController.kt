@@ -37,7 +37,7 @@ class LoginController(private var body: HashMap<String, String>) : AsyncTask<Voi
       }
     } catch (e: Exception) {
       e.printStackTrace()
-      JSONObject().put("code", 500).put("response", R.string.code_500)
+      JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
     }
   }
 }

@@ -15,108 +15,112 @@
       android:supportsRtl="true"
       android:theme="@style/AppTheme">
     <activity
-        android:screenOrientation="locked"
+        android:name=".ForgotPasswordActivity"
+        android:label="Lupa Kata sandi"
+        android:screenOrientation="locked"/>
+    <activity
         android:name=".view.PinWebViewActivity"
-        android:label="PIN">
+        android:label="PIN"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.GalleryActivity"
-        android:label="@string/gallery">
+        android:label="@string/gallery"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.BinaryWebViewActivity"
-        android:label="@string/binary">
+        android:label="@string/binary"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.LedgerWebViewActivity"
-        android:label="Ledger">
+        android:label="Ledger"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.ShowGalleryWebViewActivity"
-        android:label="@string/gallery">
+        android:label="@string/gallery"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.WithdrawActivity"
-        android:label="@string/withdraw">
+        android:label="@string/withdraw"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.OrderActivity"
-        android:label="@string/order">
+        android:label="@string/order"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.RegisterActivity"
-        android:label="@string/add_user">
+        android:label="@string/add_user"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.ImageActivity"
-        android:label="@string/image_ktp">
+        android:label="@string/image_ktp"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.EditProfileActivity"
-        android:label="@string/edit_profile">
+        android:label="@string/edit_profile"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.barcode.ResultQrActivity"
-        android:label="@string/qr">
+        android:label="@string/qr"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".view.barcode.QRActivity"
-        android:label="@string/qr">
+        android:label="@string/qr"
+        android:screenOrientation="locked">
       <meta-data
           android:name="android.support.PARENT_ACTIVITY"
           android:value=".NavigationActivity"/>
     </activity>
     <activity
-        android:screenOrientation="locked"
         android:name=".NavigationActivity"
+        android:screenOrientation="locked"
         android:theme="@style/AppTheme.NoActionBar"/>
     <activity
-        android:screenOrientation="locked"
         android:name=".MainActivity"
+        android:screenOrientation="locked"
         android:theme="@style/AppTheme.NoActionBar">
       <intent-filter>
         <action android:name="android.intent.action.MAIN"/>

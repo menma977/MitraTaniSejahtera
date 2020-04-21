@@ -128,4 +128,34 @@ class UserController {
       }
     }
   }
+
+  class SendEmail(private val body: HashMap<String, String>) :
+      AsyncTask<Void, Void, JSONObject>() {
+    override fun doInBackground(vararg params: Void?): JSONObject {
+      return try {
+        val client = OkHttpClient()
+        val mediaType: MediaType = "application/x-www-form-urlencoded".toMediaType()
+        val sendBody = Converter().map(body).toRequestBody(mediaType)
+        val request: Request = Request.Builder().url("${Url.get()}/request/password").post(sendBody)
+          .addHeader("X-Requested-With", "XMLHttpRequest").build()
+        val response: Response = client.newCall(request).execute()
+        val input = BufferedReader(InputStreamReader(response.body!!.byteStream()))
+        val inputData: String = input.readLine()
+        val convertJSON = JSONObject(inputData)
+        input.close()
+        return if (response.isSuccessful) {
+          JSONObject().put("code", response.code).put("response", convertJSON["response"])
+        } else {
+          JSONObject().put("code", response.code).put(
+            "response", convertJSON.getJSONObject("errors").getJSONArray(
+              convertJSON.getJSONObject("errors").names()[0].toString()
+            )[0]
+          )
+        }
+      } catch (e: Exception) {
+        e.printStackTrace()
+        JSONObject().put("code", 500).put("response", "Koneksi tidak setabil/Response Tidak di temukan")
+      }
+    }
+  }
 }

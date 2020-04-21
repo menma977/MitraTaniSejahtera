@@ -64,4 +64,7 @@
   <string name="share">Share</string>
   <string name="porang">Porang</string>
   <string name="talas">Talas</string>
+  <string name="lupa_kata_sandi">Lupa Kata Sandi ?</string>
+  <string name="ubah_kata_sandi">Ubah Kata Sandi</string>
+  <string name="kirim_email">Kirim Email</string>
 </resources>

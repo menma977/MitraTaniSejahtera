@@ -8,7 +8,35 @@
     </shared>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ce9d79cf-d12e-496c-a144-bc4fdd9e8a6d" name="Default Changelist" comment="" />
+    <list default="true" id="ce9d79cf-d12e-496c-a144-bc4fdd9e8a6d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/ForgotPasswordActivity.kt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_forgot_password.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/fileHashes/resourceHashesCache.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/classAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/jarAnalysis.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/javaCompile.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.6.4/javaCompile/taskHistory.bin" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/app/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/release/app-release.aab" beforeDir="false" afterPath="$PROJECT_DIR$/app/release/app-release.aab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/AndroidManifest.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/MainActivity.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/MainActivity.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/UserController.kt" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/mitratanisejahtera/controller/UserController.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-hdpi/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-hdpi/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-ldpi/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-ldpi/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-mdpi/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-mdpi/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xhdpi/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xhdpi/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout-xxhdpi/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout-xxhdpi/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values-en-rUS/strings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/res/values/strings.xml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -92,9 +120,9 @@
   </component>
   <component name="RecentsManager">
     <key name="android.template.packageName">
+      <recent name="com.mitratanisejahtera" />
       <recent name="com.mitratanisejahtera.view" />
       <recent name="com.mitratanisejahtera.view.barcode" />
-      <recent name="com.mitratanisejahtera" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\Android\Kotlin\MitraTaniSejahtera\app\src\main\res\layout" />
@@ -237,6 +265,7 @@
       <workItem from="1587108428242" duration="37000" />
       <workItem from="1587203166071" duration="1986000" />
       <workItem from="1587207719108" duration="24000" />
+      <workItem from="1587373580280" duration="1953000" />
     </task>
     <servers />
   </component>
@@ -303,9 +332,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="260" y="119" key="AndroidCreateResourceFileDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1584527317065" />
-    <state x="515" y="177" key="AndroidCreateXmlResourceDialog" timestamp="1585904456236">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="483" y="165" key="AndroidCreateXmlResourceDialog" timestamp="1587374237510">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="483" y="165" key="AndroidCreateXmlResourceDialog/0.0.1280.680/-1360.3.1360.728@0.0.1280.680" timestamp="1587374237510" />
     <state x="515" y="177" key="AndroidCreateXmlResourceDialog/0.0.1366.728@0.0.1366.728" timestamp="1585904456236" />
     <state x="513" y="177" key="AndroidCreateXmlResourceDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1585716717851" />
     <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1586761452168">
@@ -333,9 +363,10 @@
     </state>
     <state width="1323" height="179" key="GridCell.Tab.0.right/0.0.1366.728@0.0.1366.728" timestamp="1586184829320" />
     <state width="1317" height="164" key="GridCell.Tab.0.right/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1587205156191" />
-    <state x="261" y="107" key="IDE.errors.dialog" timestamp="1585841027359">
-      <screen x="0" y="0" width="1366" height="728" />
+    <state x="245" y="100" key="IDE.errors.dialog" timestamp="1587374052821">
+      <screen x="0" y="0" width="1280" height="680" />
     </state>
+    <state x="245" y="100" key="IDE.errors.dialog/0.0.1280.680/-1360.3.1360.728@0.0.1280.680" timestamp="1587374052821" />
     <state x="261" y="107" key="IDE.errors.dialog/0.0.1366.728@0.0.1366.728" timestamp="1585841027359" />
     <state x="260" y="107" key="IDE.errors.dialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1585716630159" />
     <state x="182" y="0" key="SettingsEditor" timestamp="1585904280213">

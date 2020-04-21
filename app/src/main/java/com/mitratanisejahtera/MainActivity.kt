@@ -22,6 +22,7 @@ class MainActivity : AppCompatActivity() {
   private lateinit var username: EditText
   private lateinit var password: EditText
   private lateinit var login: Button
+  private lateinit var forgotPassword: Button
   private lateinit var goTo: Intent
   private lateinit var loading: Loading
 
@@ -32,11 +33,17 @@ class MainActivity : AppCompatActivity() {
     username = findViewById(R.id.username)
     password = findViewById(R.id.password)
     login = findViewById(R.id.login)
+    forgotPassword = findViewById(R.id.ForgotPassword)
 
     doRequestPermission()
 
     loading = Loading(this)
     loading.openDialog()
+
+    forgotPassword.setOnClickListener {
+      goTo = Intent(applicationContext, ForgotPasswordActivity::class.java)
+      startActivity(goTo)
+    }
 
     Timer().schedule(100) {
       if (User(applicationContext).token.isNotEmpty()) {

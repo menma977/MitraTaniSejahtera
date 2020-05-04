@@ -24,7 +24,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_28" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_23" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -243,6 +243,7 @@
       <workItem from="1587207719108" duration="24000" />
       <workItem from="1587373580280" duration="1953000" />
       <workItem from="1587446842376" duration="599000" />
+      <workItem from="1588573505363" duration="1660000" />
     </task>
     <servers />
   </component>

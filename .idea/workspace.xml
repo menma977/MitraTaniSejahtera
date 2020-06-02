@@ -24,7 +24,7 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_23" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="Pixel_3a_XL_API_27" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -244,6 +244,17 @@
       <workItem from="1587373580280" duration="1953000" />
       <workItem from="1587446842376" duration="599000" />
       <workItem from="1588573505363" duration="1660000" />
+      <workItem from="1588659356995" duration="31000" />
+      <workItem from="1588663969766" duration="640000" />
+      <workItem from="1588666892676" duration="29000" />
+      <workItem from="1589000754103" duration="275000" />
+      <workItem from="1589001095313" duration="1090000" />
+      <workItem from="1589002458564" duration="526000" />
+      <workItem from="1589003373524" duration="549000" />
+      <workItem from="1589013227917" duration="345000" />
+      <workItem from="1589345516482" duration="56000" />
+      <workItem from="1589347474054" duration="627000" />
+      <workItem from="1589359297998" duration="639000" />
     </task>
     <servers />
   </component>
@@ -371,9 +382,10 @@
     </state>
     <state x="378" y="188" key="com.intellij.ide.util.TipDialog/0.0.1366.728@0.0.1366.728" timestamp="1586181152926" />
     <state x="376" y="188" key="com.intellij.ide.util.TipDialog/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1586510298916" />
-    <state x="376" y="96" width="607" height="606" key="find.popup" timestamp="1587204294465">
-      <screen x="0" y="0" width="1360" height="728" />
+    <state x="-984" y="3" width="607" height="728" key="find.popup" timestamp="1589013266351">
+      <screen x="-1360" y="3" width="1360" height="728" />
     </state>
+    <state x="-984" y="3" width="607" height="728" key="find.popup/0.0.1280.680/-1360.3.1360.728@-1360.3.1360.728" timestamp="1589013266351" />
     <state x="378" y="96" width="741" height="606" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1585842056575" />
     <state x="376" y="96" width="607" height="606" key="find.popup/1360.0.1024.728/0.0.1360.728@0.0.1360.728" timestamp="1587204294465" />
   </component>
